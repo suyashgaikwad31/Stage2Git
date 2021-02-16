@@ -18,5 +18,14 @@ done
  echo "head won" $countH "times"
  echo "tails won" $countT "times"
 echo
+if [ $countH -eq $countT ]
+then
+	echo "it is tie"
+elif [ $countH > $countT ]
+then
+	echo "heads won by " $(( countH-countT )) "times"
+else
+	echo "tails won by " $(( countT-countH )) "times "
+fi
 
 
