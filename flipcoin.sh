@@ -15,5 +15,8 @@ do
         i=$(( i+1 ))
         diff=$(( countH-countT ))
 done
+ echo "head won" $countH "times"
+ echo "tails won" $countT "times"
+echo
 
 
